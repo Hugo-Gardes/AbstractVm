@@ -1,0 +1,101 @@
+push double(-2)
+swap
+push int8(1)
+push int8(1)
+push int16(2)
+push int32(3)
+push float(4.1)
+push double(5.2)
+push bigdecimal(6.3)
+assert bigdecimal(6.3)
+swap
+assert double(5.2)
+pop
+pop
+assert float(4.1)
+sub
+add
+pop
+pop
+pop
+clear
+
+
+push int8(-1)
+push int8(2)
+div
+assert int8(0)
+
+
+push int8(-1)
+push int8(2)
+sub
+assert int8(-3)
+
+
+push int16(-1)
+push int8(2)
+div
+assert int16(0)
+
+
+push int8(-1)
+push int16(2)
+sub
+assert int16(-3)
+
+
+push int8(-1)
+push double(2)
+div
+assert double(-0.5)
+
+
+push int8(-1)
+push double(2)
+swap
+div
+assert double(-2)
+
+
+push int8(12)
+push int16(12)
+div
+assert int16(1)
+
+
+push int16(12)
+push int8(12)
+div
+assert int16(1)
+
+
+push float(12)
+push int8(12)
+div
+assert float(1.0)
+
+
+push float(12)
+push double(3.14)
+store int8(2)
+push float(4.2323)
+push int8(65)
+print
+dump
+
+push int32(24)
+push float(12)
+div
+assert float(2)
+push float(12)
+push double(3.14)
+store int8(2)
+push float(4.2323)
+
+
+push int8(12)
+push float(12.0)
+div
+assert float(1)
+exit

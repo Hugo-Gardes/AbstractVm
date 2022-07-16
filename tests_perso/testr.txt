@@ -1,0 +1,86 @@
+; ---------------
+; - example . avm -
+; ---------------
+push int8(5)
+push int8(6)
+mul
+push int8(7)
+add
+dump
+print
+clear
+; ---------------
+push int8(104)
+push int8(99)
+push int8(101)
+push int8(116)
+push int8(105)
+push int8(112)
+push int8(69)
+print
+pop
+print
+pop
+print
+pop
+print
+pop
+print
+pop
+print
+pop
+print
+dump
+; ---------------
+push int8(0)
+push int32(0)
+sub
+push int16(6)
+add
+push int16(5)
+div
+push int32(-5)
+mul
+push int32(5)
+add
+push int8(-50)
+div
+push float(8.88)
+mul
+push double(77.66)
+mul
+dump
+; ---------------xxx
+push int32(42)
+push int32(33)
+push float(44.55)
+push double(42.42)
+push int32(42)
+push int16(200)
+mul
+div
+div
+sub
+dump
+; ---------------
+clear
+push int16(1)
+push double(42.2)
+assert double(42.2)
+store int8(13)
+push int32(13)
+load int8(13)
+assert double(42.2)
+dump
+; ---------------
+push int8(12)
+print
+pop
+push float(42.2)
+push double(77.55)
+div
+div
+mul
+div
+dump
+exit

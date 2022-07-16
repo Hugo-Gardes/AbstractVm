@@ -1,0 +1,7 @@
+    push int8(5)
+  push int8(2)  ; comment
+                                             div ;div
+dump                                    ; coucount ;
+                 exit                        
+
+
